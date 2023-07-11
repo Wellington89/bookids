@@ -15,7 +15,7 @@
       }
   
       .text-section {
-        background-color: #f0f0f0;
+        background-color: #d61212;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -33,11 +33,33 @@
         margin-bottom: 10px;
       }
      /* ------------ESTILO DAS CAIXAS DE TEXTO------------ */
-     .text-input{
-       background-color: aqua;
-       resize: none;
-       font-size: 20px;
+
+     /* -----------------Título do livro -----------------*/
+     .text-input1{
+       text-align: center;
+       font-size: 72px;
+       border-color: transparent;
       }
+      /* -----------------Título do livro -----------------*/
+
+     /* ----------------------Autor ----------------------*/   
+     .text-input2{
+       font-size: 42px;
+       text-align:center;
+       border-color: transparent;
+
+      }
+      /* ----------------------Autor ----------------------*/   
+
+     /* --------------------História --------------------*/
+     .text-input{
+       resize: none;
+       font-size: 32px;
+       text-align: center;
+       border-color: transparent;
+            }
+    /* --------------------História --------------------*/
+
       /* ------------ESTILO DAS CAIXAS DE TEXTO------------ */
     </style>
   </head>
@@ -90,7 +112,7 @@
           textSection.style.alignItems = "center";
 
           const input1 = document.createElement("textarea");
-          input1.classList.add("text-input");
+          input1.classList.add("text-input1");
           input1.style.width = "10cm";
           input1.style.height = "10cm";
           input1.style.resize = "none"; // Impede o redimensionamento da caixa de texto
@@ -101,7 +123,7 @@
           });
 
           const input2 = document.createElement("textarea");
-          input2.classList.add("text-input");
+          input2.classList.add("text-input2");
           input2.style.width = "10cm";
           input2.style.height = "10cm";
           input2.style.resize = "none"; // Impede o redimensionamento da caixa de texto
