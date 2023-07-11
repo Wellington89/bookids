@@ -39,6 +39,7 @@
        text-align: center;
        font-size: 72px;
        border-color: transparent;
+       height: 190px !important;
       }
       /* -----------------Título do livro -----------------*/
 
@@ -47,7 +48,7 @@
        font-size: 42px;
        text-align:center;
        border-color: transparent;
-
+       height: 80px !important;
       }
       /* ----------------------Autor ----------------------*/   
 
@@ -56,7 +57,7 @@
        resize: none;
        font-size: 32px;
        text-align: center;
-       border-color: transparent;
+       border-color: transparent;          
             }
     /* --------------------História --------------------*/
 
@@ -117,7 +118,7 @@
           input1.style.height = "10cm";
           input1.style.resize = "none"; // Impede o redimensionamento da caixa de texto
           //
-          input1.placeholder = "Digite o texto da primeira seção";
+          input1.placeholder = "Título do livro";
           input1.addEventListener("input", (event) => {
             data[index].content = event.target.value;
           });
@@ -128,7 +129,7 @@
           input2.style.height = "10cm";
           input2.style.resize = "none"; // Impede o redimensionamento da caixa de texto
           //
-          input2.placeholder = "Digite o texto da segunda seção";
+          input2.placeholder = "autor";
           input2.addEventListener("input", (event) => {
             data[index + 1].content = event.target.value;
           });
